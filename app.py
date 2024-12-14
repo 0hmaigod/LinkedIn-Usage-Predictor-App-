@@ -53,7 +53,7 @@ def linkedin_model():
     age = st.number_input("Age:", min_value=0, max_value=120, help="Enter age in years")
     parent = st.selectbox("Parent (Is a parent of a child under 18?):", options=[0, 1], help="0: No, 1: Yes")
     married = st.selectbox("Marital Status:", options=[0, 1], help="0: Not Married, 1: Married")
-    female = st.selectbox("Female (Is the person female?):", options=[0, 1], help="0: No, 1: Yes")
+    female = st.selectbox("Female (Do you identify as a female?):", options=[0, 1], help="0: No, 1: Yes")
 
     if st.button("Predict"):
         user_data = [[income, education, age, parent, married, female]]
