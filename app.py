@@ -49,7 +49,7 @@ lr = train_model()
 def linkedin_model():
     st.title("LinkedIn User Predictor")
     income = st.selectbox("Income:", options=[1, 2, 3, 4, 5, 6, 7, 8, 9], help="1: Less than $10K, 2: $10K to $20K, 3: $20K to $30K, 4: $30K to $40K, 5: $40K to $50K, 6: $50K to $75K, 7: $75K to $100K, 8: $100K to $150K, 9: $150K or more")
-    education = st.selectbox("Education Level:", options=[1, 2, 3, 4, 5, 6, 7, 8], help="1: Less than high school, 8: Postgraduate degree")
+    education = st.selectbox("Education Level:", options=[1, 2, 3, 4, 5, 6, 7, 8], help="1: Less than high school, 2: High school incomplete, 3: High school graduate, 4: Some college, 5: Associate degree, 6: Bachelor's degree, 7: Some post-graduate courses, 8: Postgraduate degree")
     age = st.number_input("Age:", min_value=0, max_value=120, help="Enter age in years")
     parent = st.selectbox("Parent (Is a parent of a child under 18?):", options=[0, 1], help="0: No, 1: Yes")
     married = st.selectbox("Marital Status:", options=[0, 1], help="0: Not Married, 1: Married")
